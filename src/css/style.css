@@ -546,14 +546,14 @@ a:hover { text-decoration: underline; }
 .bar-chart__track {
   width: 100%;
   height: 26px;
-  background: var(--color-border-light);
+  background: #EDEDED;
   border-radius: 6px;
   overflow: hidden;
 }
 
 .bar-chart__fill {
   height: 100%;
-  background: var(--color-accent-light, #F4A0B0);
+  background: #E8637A;
   border-radius: 6px;
 }
 
