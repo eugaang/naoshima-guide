@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" role="img">
+  <title>선교 현황 통계 인포그래픽</title>
+  <desc>시코쿠와 세토내해 지역의 선교적 맥락을 보여주는 통계. 88개소 순례길, 세토내해 섬, 고령화율, 나오시마 인구 정보를 포함합니다.</desc>
+
+  <rect width="500" height="300" fill="#FFF5F3" rx="8"/>
+
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1A1A1A">시코쿠 · 세토내해 선교 현황</text>
+
+  <!-- Stat 1: 시코쿠 88개소 순례길 -->
+  <g transform="translate(70,80)">
+    <!-- Circular background -->
+    <circle cx="0" cy="30" r="42" fill="#2D3A5E" opacity="0.08"/>
+    <!-- Path/pilgrim icon -->
+    <circle cx="0" cy="8" r="3.5" fill="#2D3A5E"/>
+    <line x1="0" y1="12" x2="0" y2="26" stroke="#2D3A5E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="16" x2="-6" y2="22" stroke="#2D3A5E" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="16" x2="6" y2="22" stroke="#2D3A5E" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="26" x2="-4" y2="35" stroke="#2D3A5E" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="26" x2="4" y2="35" stroke="#2D3A5E" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Walking stick -->
+    <line x1="7" y1="14" x2="10" y2="36" stroke="#2D3A5E" stroke-width="1.5" stroke-linecap="round"/>
+
+    <text x="0" y="58" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5A5A5A">시코쿠 순례길</text>
+    <text x="0" y="78" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#2D3A5E">88</text>
+    <text x="0" y="92" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5A5A5A">개소</text>
+
+    <!-- Sub stats -->
+    <g transform="translate(0,108)">
+      <rect x="-45" y="0" width="90" height="34" rx="6" fill="#2D3A5E" opacity="0.06"/>
+      <text x="0" y="14" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">1,200년 역사</text>
+      <text x="0" y="28" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">1,200km 순례 코스</text>
+    </g>
+  </g>
+
+  <!-- Stat 2: 세토내해 섬 -->
+  <g transform="translate(195,80)">
+    <circle cx="0" cy="30" r="42" fill="#2CBAB0" opacity="0.08"/>
+    <!-- Island/wave icon -->
+    <path d="M-12,20 Q-6,10 0,18 Q6,10 12,20" fill="#2CBAB0" opacity="0.5"/>
+    <path d="M-15,26 Q-8,20 0,26 Q8,20 15,26" stroke="#2CBAB0" stroke-width="1.5" fill="none"/>
+    <path d="M-15,32 Q-8,26 0,32 Q8,26 15,32" stroke="#2CBAB0" stroke-width="1.5" fill="none"/>
+
+    <text x="0" y="58" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5A5A5A">세토내해</text>
+    <text x="0" y="78" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#2CBAB0">700+</text>
+    <text x="0" y="92" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5A5A5A">섬</text>
+
+    <g transform="translate(0,108)">
+      <rect x="-45" y="0" width="90" height="34" rx="6" fill="#2CBAB0" opacity="0.06"/>
+      <text x="0" y="14" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">약 150개 유인도</text>
+      <text x="0" y="28" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">복음이 닿기 어려운 섬들</text>
+    </g>
+  </g>
+
+  <!-- Stat 3: 고령화율 -->
+  <g transform="translate(320,80)">
+    <circle cx="0" cy="30" r="42" fill="#E8637A" opacity="0.08"/>
+
+    <!-- Percentage arc chart -->
+    <circle cx="0" cy="25" r="18" fill="none" stroke="#E8E4E0" stroke-width="5"/>
+    <circle cx="0" cy="25" r="18" fill="none" stroke="#E8637A" stroke-width="5"
+            stroke-dasharray="37.3 113.1" stroke-dashoffset="28.3"
+            transform="rotate(-90 0 25)"/>
+
+    <text x="0" y="58" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5A5A5A">카가와현 고령화율</text>
+    <text x="-2" y="80" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#E8637A">~33</text>
+    <text x="28" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#E8637A">%</text>
+    <text x="0" y="94" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5A5A5A">65세 이상</text>
+
+    <g transform="translate(0,108)">
+      <rect x="-45" y="0" width="90" height="34" rx="6" fill="#E8637A" opacity="0.06"/>
+      <text x="0" y="14" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">일본 최고 수준 고령화</text>
+      <text x="0" y="28" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">돌봄 사역의 필요</text>
+    </g>
+  </g>
+
+  <!-- Stat 4: 나오시마 인구 -->
+  <g transform="translate(445,80)">
+    <circle cx="0" cy="30" r="42" fill="#2D3A5E" opacity="0.08"/>
+
+    <!-- People icon group -->
+    <circle cx="-8" cy="14" r="3" fill="#2D3A5E" opacity="0.5"/>
+    <rect x="-12" y="18" width="8" height="10" rx="3" fill="#2D3A5E" opacity="0.5"/>
+    <circle cx="0" cy="10" r="4" fill="#2D3A5E"/>
+    <rect x="-4" y="15" width="8" height="12" rx="3" fill="#2D3A5E"/>
+    <circle cx="8" cy="14" r="3" fill="#2D3A5E" opacity="0.5"/>
+    <rect x="4" y="18" width="8" height="10" rx="3" fill="#2D3A5E" opacity="0.5"/>
+
+    <text x="0" y="58" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5A5A5A">나오시마 인구</text>
+    <text x="0" y="80" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#2D3A5E">~3,100</text>
+    <text x="0" y="94" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5A5A5A">명</text>
+
+    <g transform="translate(0,108)">
+      <rect x="-45" y="0" width="90" height="34" rx="6" fill="#2D3A5E" opacity="0.06"/>
+      <text x="0" y="14" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">섬에 교회 1곳</text>
+      <text x="0" y="28" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">기도의 동역이 필요한 곳</text>
+    </g>
+  </g>
+
+  <!-- Bottom note -->
+  <line x1="30" y1="268" x2="470" y2="268" stroke="#E8E4E0" stroke-width="1"/>
+  <text x="250" y="288" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A" font-style="italic">"경제는 문화의 하인이다" — 후쿠타케 소이치로 | 복음은 이 땅에도 닿아야 합니다</text>
+</svg>

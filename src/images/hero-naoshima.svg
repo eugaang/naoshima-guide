@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img">
+  <title>나오시마 비전트립 히어로 배너</title>
+  <desc>세토내해의 따뜻한 석양 풍경. 잔잔한 파도, 섬 실루엣, 쿠사마 야요이의 호박 실루엣이 어우러진 장식 배너입니다.</desc>
+  <defs>
+    <!-- Sunset gradient sky -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5D5A0"/>
+      <stop offset="35%" stop-color="#F8C87C"/>
+      <stop offset="65%" stop-color="#EDAB6A"/>
+      <stop offset="100%" stop-color="#D4956A"/>
+    </linearGradient>
+    <!-- Water gradient -->
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C8915E" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#8BACCF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6A9CC4" stop-opacity="0.4"/>
+    </linearGradient>
+    <!-- Sun glow -->
+    <radialGradient id="sunglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFE0A0" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#FFD080" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFD080" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="300" fill="url(#sky)"/>
+
+  <!-- Sun glow -->
+  <circle cx="580" cy="120" r="120" fill="url(#sunglow)"/>
+  <!-- Sun disc -->
+  <circle cx="580" cy="120" r="30" fill="#FFE8B0" opacity="0.9"/>
+  <circle cx="580" cy="120" r="22" fill="#FFF0C8" opacity="0.7"/>
+
+  <!-- Distant island silhouettes -->
+  <path d="M0,190 Q80,160 160,180 Q200,188 230,185 Q250,182 260,190 L0,190Z" fill="#A08060" opacity="0.2"/>
+  <path d="M600,185 Q650,165 700,175 Q740,182 800,178 L800,190 L600,190Z" fill="#A08060" opacity="0.15"/>
+
+  <!-- Main island silhouette (Naoshima) -->
+  <path d="
+    M280,190
+    Q300,160 340,155
+    Q370,152 400,158
+    Q430,165 450,155
+    Q470,148 490,155
+    Q510,162 520,175
+    Q530,185 540,190
+    L280,190Z
+  " fill="#5A7A50" opacity="0.35"/>
+
+  <!-- Hills on island -->
+  <path d="
+    M310,190
+    Q330,170 360,168
+    Q390,166 410,172
+    Q430,178 440,190
+    L310,190Z
+  " fill="#4A6A40" opacity="0.3"/>
+
+  <!-- Pumpkin silhouette on right edge of island -->
+  <g transform="translate(510,168)">
+    <!-- Pumpkin body -->
+    <ellipse cx="0" cy="0" rx="8" ry="9" fill="#6A8A5A" opacity="0.5"/>
+    <!-- Pumpkin ridges -->
+    <ellipse cx="-4" cy="0" rx="5" ry="9" fill="#5A7A4A" opacity="0.4"/>
+    <ellipse cx="4" cy="0" rx="5" ry="9" fill="#5A7A4A" opacity="0.4"/>
+    <!-- Stem -->
+    <rect x="-1.5" y="-12" width="3" height="4" rx="1" fill="#6A8A5A" opacity="0.5"/>
+  </g>
+
+  <!-- Water surface -->
+  <rect x="0" y="190" width="800" height="110" fill="url(#water)"/>
+
+  <!-- Sun reflection on water -->
+  <g opacity="0.3">
+    <ellipse cx="580" cy="210" rx="40" ry="3" fill="#FFE8B0"/>
+    <ellipse cx="580" cy="225" rx="25" ry="2" fill="#FFE8B0"/>
+    <ellipse cx="580" cy="238" rx="15" ry="1.5" fill="#FFE8B0"/>
+    <ellipse cx="580" cy="248" rx="10" ry="1" fill="#FFE8B0"/>
+  </g>
+
+  <!-- Wave lines -->
+  <g opacity="0.15" stroke="#FFF5F3" stroke-width="1" fill="none">
+    <path d="M0,200 Q40,196 80,200 Q120,204 160,200 Q200,196 240,200 Q280,204 320,200 Q360,196 400,200 Q440,204 480,200 Q520,196 560,200 Q600,204 640,200 Q680,196 720,200 Q760,204 800,200"/>
+    <path d="M0,220 Q40,216 80,220 Q120,224 160,220 Q200,216 240,220 Q280,224 320,220 Q360,216 400,220 Q440,224 480,220 Q520,216 560,220 Q600,224 640,220 Q680,216 720,220 Q760,224 800,220"/>
+    <path d="M0,240 Q40,237 80,240 Q120,243 160,240 Q200,237 240,240 Q280,243 320,240 Q360,237 400,240 Q440,243 480,240 Q520,237 560,240 Q600,243 640,240 Q680,237 720,240 Q760,243 800,240"/>
+    <path d="M0,260 Q50,257 100,260 Q150,263 200,260 Q250,257 300,260 Q350,263 400,260 Q450,257 500,260 Q550,263 600,260 Q650,257 700,260 Q750,263 800,260"/>
+  </g>
+
+  <!-- Gentle wave detail -->
+  <g opacity="0.08" stroke="#2D3A5E" stroke-width="0.8" fill="none">
+    <path d="M0,280 Q50,276 100,280 Q150,284 200,280 Q250,276 300,280 Q350,284 400,280 Q450,276 500,280 Q550,284 600,280 Q650,276 700,280 Q750,284 800,280"/>
+  </g>
+
+  <!-- Small boat silhouette -->
+  <g transform="translate(200,205)" opacity="0.2">
+    <path d="M-12,0 Q-10,-4 0,-5 Q10,-4 12,0 Q8,3 -8,3Z" fill="#4A3A2A"/>
+    <line x1="0" y1="-5" x2="0" y2="-15" stroke="#4A3A2A" stroke-width="1"/>
+    <path d="M0,-15 Q6,-12 1,-8" fill="#4A3A2A" opacity="0.6"/>
+  </g>
+
+  <!-- Birds -->
+  <g stroke="#5A5A5A" stroke-width="1" fill="none" opacity="0.2">
+    <path d="M120,60 Q125,55 130,60"/>
+    <path d="M140,50 Q146,44 152,50"/>
+    <path d="M155,65 Q160,60 165,65"/>
+  </g>
+</svg>

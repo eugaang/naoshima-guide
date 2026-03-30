@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" role="img">
+  <title>나오시마 섬 지도</title>
+  <desc>나오시마 섬의 주요 지구와 랜드마크를 표시한 안내 지도. 실제 지형을 참고하여 북쪽이 넓고 남쪽으로 좁아지는 형태입니다.</desc>
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D6EAF8"/>
+      <stop offset="100%" stop-color="#A8D4F0"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Sea background -->
+  <rect width="500" height="450" fill="url(#sea)" rx="8"/>
+
+  <!-- Wave decorations -->
+  <g opacity="0.12" stroke="#2CBAB0" stroke-width="1" fill="none">
+    <path d="M0,30 Q60,20 120,30 Q180,40 240,30 Q300,20 360,30 Q420,40 500,30"/>
+    <path d="M0,420 Q60,410 120,420 Q180,430 240,420 Q300,410 360,420 Q420,430 500,420"/>
+  </g>
+
+  <!-- Compass -->
+  <g transform="translate(460,40)">
+    <circle r="18" fill="#FFF5F3" stroke="#5A5A5A" stroke-width="1" opacity="0.9"/>
+    <text x="0" y="-5" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1A1A1A">N</text>
+    <polygon points="0,-14 -3,-8 3,-8" fill="#2D3A5E"/>
+    <line x1="0" y1="4" x2="0" y2="14" stroke="#5A5A5A" stroke-width="1.5"/>
+  </g>
+
+  <!-- Island shape — 실제 나오시마: 북쪽이 넓고 남쪽이 좁은 역삼각형 형태
+       서쪽에 미야노우라항, 동쪽에 혼무라, 남쪽 끝에 베네세/지중미술관 지구 -->
+  <path d="
+    M 140,55
+    C 115,58 85,70 70,95
+    C 55,120 50,150 55,175
+    C 58,195 55,215 60,240
+    C 62,255 68,268 80,280
+    C 90,292 105,308 120,325
+    C 132,340 145,358 160,370
+    C 175,385 195,395 215,398
+    C 235,400 255,395 275,382
+    C 295,368 310,348 320,325
+    C 330,302 340,278 345,255
+    C 350,232 355,208 358,185
+    C 360,162 358,138 350,118
+    C 340,95 320,78 295,67
+    C 270,56 245,50 220,48
+    C 195,45 165,50 140,55
+    Z
+  " fill="#E8E0D0" stroke="#C4B89C" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Green areas on island -->
+  <ellipse cx="200" cy="120" rx="70" ry="35" fill="#D4E6C3" opacity="0.4"/>
+  <ellipse cx="160" cy="220" rx="45" ry="30" fill="#D4E6C3" opacity="0.35"/>
+  <ellipse cx="280" cy="250" rx="35" ry="25" fill="#D4E6C3" opacity="0.35"/>
+  <ellipse cx="220" cy="340" rx="40" ry="25" fill="#D4E6C3" opacity="0.3"/>
+
+  <!-- Roads -->
+  <g stroke="#C4B89C" stroke-width="2" fill="none" stroke-dasharray="4,3" opacity="0.5">
+    <!-- 미야노우라 → 혼무라 -->
+    <path d="M100,190 C140,195 200,200 280,195"/>
+    <!-- 미야노우라 → 남쪽 (베네세/지중) -->
+    <path d="M100,190 C120,230 150,280 200,340"/>
+    <!-- 혼무라 → 남쪽 -->
+    <path d="M280,195 C290,240 270,300 240,350"/>
+  </g>
+
+  <!-- ===== District labels ===== -->
+
+  <!-- 미야노우라 지구 (West) -->
+  <rect x="40" y="145" width="100" height="24" rx="12" fill="#2D3A5E" opacity="0.85"/>
+  <text x="90" y="162" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFF5F3">미야노우라 지구</text>
+
+  <!-- 혼무라 지구 (East-center) -->
+  <rect x="285" y="165" width="90" height="24" rx="12" fill="#2D3A5E" opacity="0.85"/>
+  <text x="330" y="182" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFF5F3">혼무라 지구</text>
+
+  <!-- 베네세하우스 지구 (Southeast coast) -->
+  <rect x="280" y="300" width="110" height="24" rx="12" fill="#2D3A5E" opacity="0.85"/>
+  <text x="335" y="317" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFF5F3">베네세하우스 지구</text>
+
+  <!-- 지중미술관 지구 (South) -->
+  <rect x="100" y="300" width="105" height="24" rx="12" fill="#2D3A5E" opacity="0.85"/>
+  <text x="152" y="317" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFF5F3">지중미술관 지구</text>
+
+  <!-- ===== Landmarks ===== -->
+
+  <!-- 미야노우라항 (West side) -->
+  <circle cx="85" cy="190" r="6" fill="#E8637A" stroke="#FFF5F3" stroke-width="2"/>
+  <text x="85" y="210" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1A1A1A" font-weight="bold">미야노우라항</text>
+  <path d="M73,185 L77,180 L93,180 L97,185" stroke="#2CBAB0" stroke-width="1.5" fill="none"/>
+
+  <!-- 빨간 호박 (Miyanoura port area) -->
+  <circle cx="72" cy="210" r="5" fill="#E74C3C" stroke="#FFF5F3" stroke-width="1.5"/>
+  <text x="44" y="226" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">빨간호박</text>
+
+  <!-- 아트하우스 프로젝트 (Honmura) -->
+  <circle cx="290" cy="200" r="5" fill="#E8637A" stroke="#FFF5F3" stroke-width="1.5"/>
+  <text x="290" y="217" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">아트하우스</text>
+  <text x="290" y="228" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">프로젝트</text>
+
+  <!-- 안도뮤지엄 (Honmura) -->
+  <circle cx="310" cy="220" r="4" fill="#E8637A" stroke="#FFF5F3" stroke-width="1.5"/>
+  <text x="340" y="225" text-anchor="start" font-family="sans-serif" font-size="9" fill="#5A5A5A">안도뮤지엄</text>
+
+  <!-- 지중미술관 (South) -->
+  <circle cx="170" cy="330" r="5" fill="#E8637A" stroke="#FFF5F3" stroke-width="1.5"/>
+  <text x="170" y="348" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">지중미술관</text>
+
+  <!-- 이우환미술관 (between Chichu and Benesse) -->
+  <circle cx="215" cy="350" r="5" fill="#E8637A" stroke="#FFF5F3" stroke-width="1.5"/>
+  <text x="215" y="368" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">이우환미술관</text>
+
+  <!-- 베네세하우스 (Southeast coast) -->
+  <circle cx="265" cy="345" r="5" fill="#E8637A" stroke="#FFF5F3" stroke-width="1.5"/>
+  <text x="265" y="363" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A5A5A">베네세하우스</text>
+
+  <!-- 노란 호박 (South tip, Benesse beach) -->
+  <circle cx="285" cy="370" r="5" fill="#FFD700" stroke="#FFF5F3" stroke-width="1.5"/>
+  <text x="320" y="375" text-anchor="start" font-family="sans-serif" font-size="9" fill="#5A5A5A">노란호박</text>
+
+  <!-- 나오시마 성 / 직도정 (center, for reference) -->
+  <text x="200" y="165" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5A5A5A" opacity="0.6">直島</text>
+
+  <!-- Legend -->
+  <g transform="translate(15,400)">
+    <rect x="0" y="0" width="210" height="40" rx="6" fill="#FFF5F3" opacity="0.9" stroke="#C4B89C" stroke-width="0.5"/>
+    <circle cx="18" cy="20" r="5" fill="#E8637A" stroke="#FFF5F3" stroke-width="1.5"/>
+    <text x="30" y="24" font-family="sans-serif" font-size="9" fill="#1A1A1A">주요 시설</text>
+    <circle cx="95" cy="20" r="5" fill="#E74C3C" stroke="#FFF5F3" stroke-width="1.5"/>
+    <text x="107" y="24" font-family="sans-serif" font-size="9" fill="#1A1A1A">쿠사마 작품</text>
+    <line x1="160" y1="20" x2="178" y2="20" stroke="#C4B89C" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="183" y="24" font-family="sans-serif" font-size="9" fill="#1A1A1A">도로</text>
+  </g>
+
+  <!-- Scale hint -->
+  <text x="480" y="440" text-anchor="end" font-family="sans-serif" font-size="8" fill="#5A5A5A" opacity="0.7">면적 약 8km²</text>
+</svg>

@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+.env
+
+# 원본 소스 (배포 불필요)
+img/
+ppt_image/
+honmura/
+지중미술관/

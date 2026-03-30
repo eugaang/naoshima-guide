@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+
+    <header id="site-header" role="banner">
+      <h1 id="site-title"></h1>
+      <p id="site-subtitle"></p>
+    </header>
+
+    <nav id="main-nav" role="navigation" aria-label="main navigation">
+      <ul id="nav-tabs" role="tablist"></ul>
+    </nav>
+
+    <main id="content" role="main">
+
+      <section id="section-naoshima-project" class="content-section" role="tabpanel" aria-labelledby="tab-naoshima-project" hidden>
+        <h2 class="section__title"></h2>
+        <div class="section__subsections"></div>
+      </section>
+
+      <section id="section-artists-and-works" class="content-section" role="tabpanel" aria-labelledby="tab-artists-and-works" hidden>
+        <h2 class="section__title"></h2>
+        <div class="section__subsections"></div>
+        <div class="artist-cards" id="artist-cards"></div>
+      </section>
+
+      <section id="section-mission-perspective" class="content-section" role="tabpanel" aria-labelledby="tab-mission-perspective" hidden>
+        <h2 class="section__title"></h2>
+        <div class="section__subsections"></div>
+      </section>
+
+      <section id="section-practical-info" class="content-section" role="tabpanel" aria-labelledby="tab-practical-info" hidden>
+        <h2 class="section__title"></h2>
+        <div class="section__subsections"></div>
+      </section>
+
+    </main>
+
+    <footer id="site-footer" role="contentinfo">
+      <p id="footer-text"></p>
+    </footer>
+
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
