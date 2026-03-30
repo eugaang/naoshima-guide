@@ -551,6 +551,8 @@ a:hover { text-decoration: underline; }
   background: var(--color-accent-light, #F4A0B0);
   border-radius: 4px;
   min-width: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .bar-chart__value {
