@@ -527,40 +527,34 @@ a:hover { text-decoration: underline; }
   line-height: 1.4;
 }
 
-/* ---- Bar Chart (responsive) ---- */
+/* ---- Bar Chart (simple, no flex) ---- */
 .bar-chart {
   margin: var(--space-md) 0;
 }
 
-.bar-chart__row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
+.bar-chart__item {
+  margin-bottom: 12px;
 }
 
 .bar-chart__label {
-  font-size: 13px;
-  color: var(--color-text-light);
-  min-width: 70px;
-  flex-shrink: 0;
-}
-
-.bar-chart__bar {
-  height: 22px;
-  background: var(--color-accent-light, #F4A0B0);
-  border-radius: 4px;
-  flex-shrink: 1;
-}
-
-.bar-chart__value {
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   color: var(--color-text);
-  white-space: nowrap;
-  flex-shrink: 0;
-  min-width: 75px;
-  text-align: right;
+  margin-bottom: 4px;
+}
+
+.bar-chart__track {
+  width: 100%;
+  height: 26px;
+  background: var(--color-border-light);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bar-chart__fill {
+  height: 100%;
+  background: var(--color-accent-light, #F4A0B0);
+  border-radius: 6px;
 }
 
 /* ---- Zoomable Image (click to fullscreen) ---- */
