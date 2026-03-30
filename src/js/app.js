@@ -41,7 +41,7 @@ const showError = (message) => {
 };
 
 /** Cache-busting version (increment to force reload of images) */
-const ASSET_VERSION = '32';
+const ASSET_VERSION = '33';
 
 /** Render image figure if subsection has an image */
 const renderImage = (sub) => {
@@ -335,6 +335,12 @@ const renderArthouseDetail = (arthouseId) => {
         <h3 class="artist-detail__section-title" style="color:var(--color-accent, #E8637A)">💡 관람 팁</h3>
         <p class="artist-detail__text">${ah.visitTip}</p>
       </section>` : ''}
+
+      <nav class="artist-detail__nav" style="margin-top:var(--space-md)">
+        <button class="artist-detail__back" type="button" aria-label="목록으로 돌아가기">
+          ← 목록으로
+        </button>
+      </nav>
     </div>`;
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -457,6 +463,12 @@ const renderArtistDetail = (artistId) => {
         <h3 class="artist-detail__section-title" id="korea-${artist.id}">한국에서 만나기</h3>
         <ul class="artist-detail__korea-list">${koreaHTML}</ul>
       </section>
+
+      <nav class="artist-detail__nav" style="margin-top:var(--space-md)">
+        <button class="artist-detail__back" type="button" aria-label="목록으로 돌아가기">
+          ← 목록으로
+        </button>
+      </nav>
     </div>`;
 
   currentView = 'artist-detail';
@@ -645,6 +657,13 @@ const setupEventListeners = () => {
     const ahCard = e.target.closest('.artist-card[data-arthouse-id]');
     if (ahCard) {
       navigateToArthouse(ahCard.dataset.arthouseId);
+      return;
+    }
+
+    // Zoomable image click (chichu gallery etc.)
+    const zoomImg = e.target.closest('.zoomable-img');
+    if (zoomImg) {
+      zoomImg.classList.toggle('zoomable-img--expanded');
       return;
     }
   });

@@ -561,6 +561,32 @@ a:hover { text-decoration: underline; }
   flex-shrink: 0;
 }
 
+/* ---- Zoomable Image (click to fullscreen) ---- */
+.zoomable-img {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.zoomable-img:hover {
+  transform: scale(1.02);
+}
+
+.zoomable-img--expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  border-radius: 0 !important;
+  aspect-ratio: auto;
+  cursor: zoom-out;
+  transform: none;
+  max-width: none;
+}
+
 /* ---- Arthouse Gallery ---- */
 .arthouse-gallery {
   display: grid;
