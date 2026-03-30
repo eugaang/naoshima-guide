@@ -234,11 +234,19 @@ a:hover { text-decoration: underline; }
 .subsection__figure {
   margin: 0 0 var(--space-md) 0;
   border-radius: var(--radius-sm);
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   background-color: var(--color-bg);
+  -webkit-overflow-scrolling: touch;
 }
 
 .subsection__image { width: 100%; height: auto; display: block; }
+
+/* SVG 인포그래픽: 모바일에서 최소 너비 확보하여 글자 가독성 유지 */
+.subsection__image[src$=".svg"] {
+  min-width: 500px;
+  width: 500px;
+}
 
 .subsection__content {
   font-size: var(--font-size-base);
@@ -670,6 +678,7 @@ a:hover { text-decoration: underline; }
   .artist-detail__name { font-size: var(--font-size-2xl); }
   .artist-detail__works { grid-template-columns: 1fr 1fr; }
 
+  .subsection__image[src$=".svg"] { min-width: auto; width: 100%; }
   .stat-grid { gap: var(--space-md); }
   .stat-card { padding: var(--space-md); }
   .stat-card__number { font-size: 28px; }
