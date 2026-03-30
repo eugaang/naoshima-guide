@@ -41,7 +41,7 @@ const showError = (message) => {
 };
 
 /** Cache-busting version (increment to force reload of images) */
-const ASSET_VERSION = '35';
+const ASSET_VERSION = '36';
 
 /** Render image figure if subsection has an image */
 const renderImage = (sub) => {
