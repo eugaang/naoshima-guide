@@ -120,9 +120,24 @@ harness_test/
 # 로컬 개발 서버 (Python 내장)
 cd src && python3 -m http.server 8000
 
-# 구조 검증
+# 정적 구조 검증
 python3 scripts/check_structure.py
+
+# 라이브 품질 평가 (Playwright, 서버 자동 시작)
+npm run test:live
+
+# 전체 검증 (정적 + 라이브)
+npm run test:all
 
 # JSON 유효성 검사
 python3 -c "import json; json.load(open('src/data/sections.json'))"
 ```
+
+### 라이브 평가 기준 (Playwright)
+
+| 기준 | 테스트 수 | 내용 |
+|------|---------|------|
+| 기능성 | 7 | 페이지 로딩, 네비게이션, 라우팅, JSON 로딩, 목록 복귀 |
+| 디자인 품질 | 4 | 폰트 18px+, 터치타겟 48px+, WCAG AA 색상대비, lang=ko |
+| 완성도 | 5 | 콘솔 에러 0, 깨진 이미지 0, 빈 섹션 0, 외부 CDN 0 |
+| 모바일 | 4 | 하단 네비 가시성, 가로 스크롤 없음, 텍스트 넘침 없음, 탭 동작 |

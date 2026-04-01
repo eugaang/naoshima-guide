@@ -1,0 +1,28 @@
+{
+  "name": "harness_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:static": "python3 scripts/check_structure.py",
+    "test:live": "npx playwright test",
+    "test:all": "python3 scripts/check_structure.py && npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugaang/naoshima-guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/eugaang/naoshima-guide/issues"
+  },
+  "homepage": "https://github.com/eugaang/naoshima-guide#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.0",
+    "playwright": "^1.59.0"
+  }
+}

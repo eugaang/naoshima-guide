@@ -9,3 +9,8 @@ img/
 ppt_image/
 /honmura/
 지중미술관/
+
+# Playwright
+test-results/
+scripts/evaluate_report.json
+node_modules/
